@@ -26,16 +26,13 @@
 
 * Enjoy!
 
-## Standard usage
+## Standard usage (HTML parse mode)
 ```
-// Open from stream (HTML parse mode)
+// Open from stream
 using (var stream = new FileStream("target.html", FileMode.Open, FileAccess.Read, FileShare.Read))
 {
-	// Setup SgmlReader
-	var sgmlReader = new SgmlReader(stream);
-
-	// create document
-	var document = XDocument.Load(sgmlReader);
+	// Parse Html mode (Easy usage)
+	XDocument document = SgmlReader.Parse(stream);
 }
 ```
 
@@ -73,7 +70,8 @@ using (var stream = new FileStream("target.sgml", FileMode.Open, FileAccess.Read
 ```
 
 ## Versions
-
+* 2014.12.7.3:
+ * Add 1 line parse method.
 * 2014.12.7.2:
  * Direct handling the Stream class.
  * Initial parameter is set of Html parse mode.

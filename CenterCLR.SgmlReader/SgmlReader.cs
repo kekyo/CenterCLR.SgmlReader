@@ -59,6 +59,7 @@ using System.IO;
 using System.Reflection;
 using System.Text;
 using System.Xml;
+using System.Xml.Linq;
 
 namespace CenterCLR.Sgml
 {
@@ -485,6 +486,46 @@ namespace CenterCLR.Sgml
 			this.m_baseUri = baseUri;
 			this.m_streamOpener = streamOpener;
 			Init();
+		}
+
+		/// <summary>
+		/// Parse Html from stream, and create XDocument instance.
+		/// </summary>
+		/// <param name="stream">Stream</param>
+		/// <returns>XDocument</returns>
+		public static XDocument Parse(Stream stream)
+		{
+			return XDocument.Load(new SgmlReader(stream));
+		}
+
+		/// <summary>
+		/// Parse Html from TextReader, and create XDocument instance.
+		/// </summary>
+		/// <param name="tr">Text reader</param>
+		/// <returns>XDocument</returns>
+		public static XDocument Parse(TextReader tr)
+		{
+			return XDocument.Load(new SgmlReader(tr));
+		}
+
+		/// <summary>
+		/// Parse Html from stream, and create XElement instance.
+		/// </summary>
+		/// <param name="stream">Stream</param>
+		/// <returns>XElement</returns>
+		public static XElement ParseXElement(Stream stream)
+		{
+			return XElement.Load(new SgmlReader(stream));
+		}
+
+		/// <summary>
+		/// Parse Html from stream, and create XElement instance.
+		/// </summary>
+		/// <param name="tr">Text reader</param>
+		/// <returns>XElement</returns>
+		public static XElement ParseXElement(TextReader tr)
+		{
+			return XElement.Load(new SgmlReader(tr));
 		}
 
 		/// <summary>
