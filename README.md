@@ -20,6 +20,10 @@
 * NuGet package ID: SgmlReaderPortable (https://www.nuget.org/packages/SgmlReaderPortable/)
 * GitHub: https://github.com/kekyo/CenterCLR.SgmlReader.git
 
+* Build requirements:
+ * Visual Studio 2012
+ * NuBuild Project System (https://visualstudiogallery.msdn.microsoft.com/3efbfdea-7d51-4d45-a954-74a2df51c5d0)
+
 * Enjoy!
 
 ## Standard usage
@@ -80,7 +84,12 @@ using (var stream = new FileStream("target.sgml", FileMode.Open, FileAccess.Read
 
 ## Versions
 
-1.8.11.2014: Initial release.
+* 2014.12.7.1:
+ * Namespace changed "CenterCLR.Sgml".
+ * More easy usage, HTML parse is default mode.
+ * Native store app library included.
+* 1.8.11.2014:
+ * Initial release.
 
 ## Derived original copyrights
 ```
