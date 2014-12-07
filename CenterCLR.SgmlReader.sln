@@ -1,10 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
+Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.SgmlReader", "CenterCLR.SgmlReader\CenterCLR.SgmlReader.csproj", "{9E2C16E2-EC92-4437-B123-3375568F4DF6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.SgmlReaderTests", "CenterCLR.SgmlReaderTests\CenterCLR.SgmlReaderTests.csproj", "{31F6EB63-3A48-40F5-AB44-417ED60C8BAD}"
-EndProject
+VisualStudioVersion = 11.0.0.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4AF3A4D1-74B7-4F8C-9CCD-7C82C78116D4}"
 	ProjectSection(SolutionItems) = preProject
 		CenterCLR.SgmlReader.design = CenterCLR.SgmlReader.design
@@ -19,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DB2867
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.SgmlReader", "CenterCLR.SgmlReader\CenterCLR.SgmlReader.csproj", "{9E2C16E2-EC92-4437-B123-3375568F4DF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.SgmlReaderTests", "CenterCLR.SgmlReaderTests\CenterCLR.SgmlReaderTests.csproj", "{31F6EB63-3A48-40F5-AB44-417ED60C8BAD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.SgmlReader.StoreApp", "CenterCLR.SgmlReader.StoreApp\CenterCLR.SgmlReader.StoreApp.csproj", "{C26A3041-3F92-4A99-9849-2450FB5CFC1F}"
 EndProject

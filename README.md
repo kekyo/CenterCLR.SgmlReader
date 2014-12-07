@@ -3,7 +3,7 @@
 ## What is this?
 
 * SgmlReader is "SGML" markup language parser, and derived from System.Xml.XmlReader in .NET CLR.
-* And, most popular usage the "HTML" parser.
+* But, most popular usage the "HTML" parser. (It's scraper!!)
 
 * SgmlReader based Mindtouch SgmlReader 1.8.11 (https://github.com/mindtouch/sgmlreader)
 * Changed to Portable class library, target platforms:
