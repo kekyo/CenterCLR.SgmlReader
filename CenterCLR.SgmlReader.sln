@@ -7,8 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.SgmlReaderTests",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4AF3A4D1-74B7-4F8C-9CCD-7C82C78116D4}"
 	ProjectSection(SolutionItems) = preProject
-		README.txt = README.txt
 		CenterCLR.SgmlReader.design = CenterCLR.SgmlReader.design
+		README.md = README.md
+		README.txt = README.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DB2867CE-E612-4796-AE31-C7619071CE1E}"
@@ -32,8 +33,6 @@ Global
 		{31F6EB63-3A48-40F5-AB44-417ED60C8BAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31F6EB63-3A48-40F5-AB44-417ED60C8BAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31F6EB63-3A48-40F5-AB44-417ED60C8BAD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
