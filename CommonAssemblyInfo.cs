@@ -67,5 +67,5 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyTrademark("SgmlReader for Portable")]
 [assembly: AssemblyCulture("")]
 
-[assembly: AssemblyVersion("2014.12.7.1")]
-[assembly: AssemblyFileVersion("2014.12.7.1")]
+[assembly: AssemblyVersion("2014.12.7.2")]
+[assembly: AssemblyFileVersion("2014.12.7.2")]

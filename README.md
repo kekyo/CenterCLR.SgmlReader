@@ -28,24 +28,14 @@
 
 ## Standard usage
 ```
-// Open stream
+// Open from stream (HTML parse mode)
 using (var stream = new FileStream("target.html", FileMode.Open, FileAccess.Read, FileShare.Read))
 {
-	var tr = new StreamReader(stream, Encoding.UTF8);
-
 	// Setup SgmlReader
-	var sgmlReader = new SgmlReader(stream)
-		{
-			DocType = "HTML",				// Use internal HTML4 DTD (No external access)
-			WhitespaceHandling = true,		// Means WhitespaceHandling.All
-			CaseFolding = CaseFolding.ToLower
-		};
+	var sgmlReader = new SgmlReader(stream);
 
 	// create document
-	var document = new XmlDocument();
-	document.PreserveWhitespace = true;
-	document.XmlResolver = null;
-	document.Load(sgmlReader);
+	var document = XDocument.Load(sgmlReader);
 }
 ```
 
@@ -84,6 +74,9 @@ using (var stream = new FileStream("target.sgml", FileMode.Open, FileAccess.Read
 
 ## Versions
 
+* 2014.12.7.2:
+ * Direct handling the Stream class.
+ * Initial parameter is set of Html parse mode.
 * 2014.12.7.1:
  * Namespace changed "CenterCLR.Sgml".
  * More easy usage, HTML parse is default mode.

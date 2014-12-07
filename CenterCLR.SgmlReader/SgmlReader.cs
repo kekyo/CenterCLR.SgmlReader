@@ -391,7 +391,7 @@ namespace CenterCLR.Sgml
 		/// </summary>
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1705", Justification = "SgmlReader's standards for constants are different to Microsoft's and in line with older C++ style constants naming conventions.  Visually, constants using this style are more easily identifiable as such.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1707", Justification = "SgmlReader's standards for constants are different to Microsoft's and in line with older C++ style constants naming conventions.  Visually, constants using this style are more easily identifiable as such.")]
-		public const string UNDEFINED_NAMESPACE = "#unknown";
+		public static readonly string UNDEFINED_NAMESPACE = "#unknown";
 
 		private SgmlDtd m_dtd;
 		private Entity m_current;
@@ -424,12 +424,12 @@ namespace CenterCLR.Sgml
 		private string m_syslit;
 		private string m_pubid;
 		private string m_subset;
-		private string m_docType;
-		private bool m_whitespaceHandling;
-		private CaseFolding m_folding = CaseFolding.None;
+		private string m_docType = "html";
+		private bool m_whitespaceHandling = true;
+		private CaseFolding m_folding = CaseFolding.ToLower;
 		private bool m_stripDocType = true;
 		//private string m_startTag;
-		private Dictionary<string, string> unknownNamespaces = new Dictionary<string, string>();
+		private readonly Dictionary<string, string> unknownNamespaces = new Dictionary<string, string>();
 
 		/// <summary>
 		/// Initialises a new instance of the SgmlReader class.
@@ -450,6 +450,16 @@ namespace CenterCLR.Sgml
 		}
 
 		/// <summary>
+		/// Initialises a new instance of the SgmlReader class with Stream.
+		/// </summary>
+		/// <param name="stream">Initial content stream.</param>
+		public SgmlReader(Stream stream)
+		{
+			this.m_inputStream = new StreamReader(stream, Encoding.UTF8, true);
+			Init();
+		}
+
+		/// <summary>
 		/// Initialises a new instance of the SgmlReader class with TextReader.
 		/// </summary>
 		/// <param name="tr">Initial content stream.</param>
@@ -458,6 +468,20 @@ namespace CenterCLR.Sgml
 		public SgmlReader(TextReader tr, Uri baseUri, Func<Uri, StreamInformation> streamOpener)
 		{
 			this.m_inputStream = tr;
+			this.m_baseUri = baseUri;
+			this.m_streamOpener = streamOpener;
+			Init();
+		}
+
+		/// <summary>
+		/// Initialises a new instance of the SgmlReader class with Stream.
+		/// </summary>
+		/// <param name="stream">Initial content stream.</param>
+		/// <param name="baseUri">Base uri</param>
+		/// <param name="streamOpener">Stream opener delegate</param>
+		public SgmlReader(Stream stream, Uri baseUri, Func<Uri, StreamInformation> streamOpener)
+		{
+			this.m_inputStream = new StreamReader(stream, Encoding.UTF8, true);
 			this.m_baseUri = baseUri;
 			this.m_streamOpener = streamOpener;
 			Init();
@@ -500,7 +524,7 @@ namespace CenterCLR.Sgml
 						using (var stm = type.Assembly.GetManifestResourceStream(name))
 #endif
 						{
-							var sr = new StreamReader(stm);
+							var sr = new StreamReader(stm, Encoding.UTF8, true);
 							this.m_dtd = SgmlDtd.Parse(baseUri, "HTML", sr, null, this.m_streamOpener, null);
 						}
 					}
@@ -2420,6 +2444,7 @@ namespace CenterCLR.Sgml
 		/// <summary>
 		/// Changes the <see cref="ReadState"/> to Closed.
 		/// </summary>
+		[SuppressMessage("Microsoft.Usage", "CA2213")]
 		protected override void Dispose(bool disposing)
 		{
 			if (this.m_current != null)
