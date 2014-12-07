@@ -60,5 +60,3 @@ using System.Reflection;
 //
 [assembly: AssemblyTitle("SgmlReader for Portable (Store App)")]
 [assembly: AssemblyDescription("Converts SGML to XML via XmlReader API")]
-
-[assembly: AssemblyFileVersion("1.8.11.2014")]

@@ -62,6 +62,4 @@ using System.Reflection;
 [assembly: AssemblyTitle("SgmlReader for Portable")]
 [assembly: AssemblyDescription("Converts SGML to XML via XmlReader API")]
 
-[assembly: AssemblyFileVersion("1.8.11.2014")]
-
 [assembly: CLSCompliant(true)]

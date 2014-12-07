@@ -63,8 +63,9 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft, MindTouch, Kouji Matsui")]
 [assembly: AssemblyProduct("SgmlReader for Portable")]
-[assembly: AssemblyCopyright("Copyright (c) 2002, Microsoft Corporation; Copyright (c) 2007-2013, MindTouch; Copyright (c) 2014, Kouji Matsui")]
+[assembly: AssemblyCopyright("Copyright (c) 2002 Microsoft Corporation; Copyright (c) 2007-2013 MindTouch; Copyright (c) 2014 Kouji Matsui")]
 [assembly: AssemblyTrademark("SgmlReader for Portable")]
 [assembly: AssemblyCulture("")]
 
-[assembly: AssemblyVersion("1.8.11.2014")]
+[assembly: AssemblyVersion("2014.12.7.1")]
+[assembly: AssemblyFileVersion("2014.12.7.1")]

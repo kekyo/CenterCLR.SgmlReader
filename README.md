@@ -17,7 +17,7 @@
 * Unit test included.
 * Class interface little bit changed from original implementation.
 
-* NuGet package ID: SgmlReaderPortable (https://www.nuget.org/packages/SgmlReaderPortable/)
+* NuGet package ID: CenterCLR.SgmlReader (https://www.nuget.org/packages/CenterCLR.SgmlReader/)
 * GitHub: https://github.com/kekyo/CenterCLR.SgmlReader.git
 
 * Build requirements:
