@@ -56,6 +56,7 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.IO;
+using System.Reflection;
 using System.Text;
 using System.Xml;
 
@@ -493,7 +494,11 @@ namespace CenterCLR.Sgml
 					{
 						var type = this.GetType();
 						var name = type.Namespace + ".Html.dtd";
+#if NETFX_CORE
+						using (var stm = type.GetTypeInfo().Assembly.GetManifestResourceStream(name))
+#else
 						using (var stm = type.Assembly.GetManifestResourceStream(name))
+#endif
 						{
 							var sr = new StreamReader(stm);
 							this.m_dtd = SgmlDtd.Parse(baseUri, "HTML", sr, null, this.m_streamOpener, null);
