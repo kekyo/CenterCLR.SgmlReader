@@ -24,7 +24,6 @@
 
 ## Standard usage
 ```
---------------------------------------------------------------------------
 // Open stream
 using (var stream = new FileStream("target.html", FileMode.Open, FileAccess.Read, FileShare.Read))
 {
@@ -48,7 +47,6 @@ using (var stream = new FileStream("target.html", FileMode.Open, FileAccess.Read
 
 ## External reference capability usage (SGML handling, not tested :-)
 ```
---------------------------------------------------------------------------
 // Open stream
 using (var stream = new FileStream("target.sgml", FileMode.Open, FileAccess.Read, FileShare.Read))
 {
@@ -84,6 +82,7 @@ using (var stream = new FileStream("target.sgml", FileMode.Open, FileAccess.Read
 
 1.8.11.2014: Initial release.
 
+## Derived original copyrights
 ```
 /*
  * 

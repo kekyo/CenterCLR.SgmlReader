@@ -9,7 +9,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		CenterCLR.SgmlReader.design = CenterCLR.SgmlReader.design
 		README.md = README.md
-		README.txt = README.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DB2867CE-E612-4796-AE31-C7619071CE1E}"
