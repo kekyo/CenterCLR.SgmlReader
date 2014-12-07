@@ -54,7 +54,7 @@ namespace CenterCLR.Sgml
 	/// <summary>
 	/// Thrown if any errors occur while parsing the source.
 	/// </summary>
-	public class SgmlParseException : Exception
+	public sealed class SgmlParseException : Exception
 	{
 		private string m_entityContext;
 
@@ -999,7 +999,7 @@ namespace CenterCLR.Sgml
 	}
 
 	// This class decodes an HTML/XML stream correctly.
-	internal class HtmlStream : TextReader
+	internal sealed class HtmlStream : TextReader
 	{
 		private Stream stm;
 		private byte[] rawBuffer;
@@ -1548,7 +1548,7 @@ namespace CenterCLR.Sgml
 		}
 	}
 
-	internal class Ucs4DecoderBigEngian : Ucs4Decoder
+	internal sealed class Ucs4DecoderBigEngian : Ucs4Decoder
 	{
 		internal override int GetFullChars(byte[] bytes, int byteIndex, int byteCount, char[] chars, int charIndex)
 		{
@@ -1585,7 +1585,7 @@ namespace CenterCLR.Sgml
 		}
 	}
 
-	internal class Ucs4DecoderLittleEndian : Ucs4Decoder
+	internal sealed class Ucs4DecoderLittleEndian : Ucs4Decoder
 	{
 		internal override int GetFullChars(byte[] bytes, int byteIndex, int byteCount, char[] chars, int charIndex)
 		{

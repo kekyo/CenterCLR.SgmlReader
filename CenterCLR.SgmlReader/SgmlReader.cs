@@ -91,7 +91,7 @@ namespace CenterCLR.Sgml
 	/// used to maintain current state of the parser for element stack, and attributes
 	/// in each element.
 	/// </summary>
-	internal class HWStack
+	internal sealed class HWStack
 	{
 		private object[] m_items;
 		private int m_size;
@@ -206,7 +206,7 @@ namespace CenterCLR.Sgml
 	/// This class represents an attribute.  The AttDef is assigned
 	/// from a validation process, and is used to provide default values.
 	/// </summary>
-	internal class Attribute
+	internal sealed class Attribute
 	{
 		internal string Name;    // the atomized name.
 		internal AttDef DtdType; // the AttDef of the attribute from the SGML DTD.
@@ -255,7 +255,7 @@ namespace CenterCLR.Sgml
 	/// for validation purposes, and these Node objects are reused to reduce object allocation,
 	/// hence the reset method.  
 	/// </summary>
-	internal class Node
+	internal sealed class Node
 	{
 		internal XmlNodeType NodeType;
 		internal string Value;
@@ -266,7 +266,7 @@ namespace CenterCLR.Sgml
 		internal ElementDecl DtdType; // the DTD type found via validation
 		internal State CurrentState;
 		internal bool Simulated; // tag was injected into result stream.
-		HWStack attributes = new HWStack(10);
+		internal readonly HWStack attributes = new HWStack(10);
 
 		/// <summary>
 		/// Attribute objects are reused during parsing to reduce memory allocations, 
