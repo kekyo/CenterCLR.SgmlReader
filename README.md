@@ -28,6 +28,8 @@
  * Visual Studio 2012
  * NuBuild Project System (https://visualstudiogallery.msdn.microsoft.com/3efbfdea-7d51-4d45-a954-74a2df51c5d0)
 
+* Advent calendar-driven project :-)  (http://www.kekyo.net/2014/12/08/4441  in Japanese)
+
 * Enjoy!
 
 ## Standard usage (HTML parse mode)
