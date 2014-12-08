@@ -1,5 +1,7 @@
 # SgmlReader for Portable Class Library
 
+![SgmlReader for Portable Class Library](https://raw.githubusercontent.com/kekyo/CenterCLR.SgmlReader/master/CenterCLR.SgmlReader.128.png)
+
 ## What is this?
 
 * SgmlReader is "SGML" markup language parser, and derived from System.Xml.XmlReader in .NET CLR.
@@ -7,11 +9,13 @@
 
 * SgmlReader based Mindtouch SgmlReader 1.8.11 (https://github.com/mindtouch/sgmlreader)
 * Changed to Portable class library, target platforms:
- * .NET Framework 4.0 or upper.
+ * .NET Framework 4.0.3 or upper.
  * Silverlight 4 or upper.
  * Windows phone 7 or upper.
  * Windows store apps (Windows 8 or upper).
  * Xbox 360.
+
+* PCL Profiles: 131, 336
 
 * More easy usage: HTML4 DTD included. - HTML scraping ready!
 * Unit test included.
