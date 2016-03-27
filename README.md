@@ -2,6 +2,9 @@
 
 ![SgmlReader for Portable Class Library](https://raw.githubusercontent.com/kekyo/CenterCLR.SgmlReader/master/CenterCLR.SgmlReader.128.png)
 
+## Status
+* NuGet Package: [![NuGet SgmlReader](https://img.shields.io/nuget/v/CenterCLR.SgmlReader.svg?style=flat)](https://www.nuget.org/packages/CenterCLR.SgmlReader)
+
 ## What is this?
 
 * SgmlReader is "SGML" markup language parser, and derived from System.Xml.XmlReader in .NET CLR.
@@ -13,9 +16,10 @@
  * Silverlight 4 or upper.
  * Windows phone 7 or upper.
  * Windows store apps (Windows 8 or upper).
+ * DNX (dnxcore50)
  * Xbox 360.
 
-* PCL Profiles: 131, 336
+* PCL Profiles: 131, 336, 259
 
 * More easy usage: HTML4 DTD included. - HTML scraping ready!
 * Unit test included.
@@ -25,8 +29,7 @@
 * GitHub: https://github.com/kekyo/CenterCLR.SgmlReader.git
 
 * Build requirements:
- * Visual Studio 2012
- * NuBuild Project System (https://visualstudiogallery.msdn.microsoft.com/3efbfdea-7d51-4d45-a954-74a2df51c5d0)
+ * Visual Studio 2012/2015
 
 * Advent calendar-driven project :-)  (http://www.kekyo.net/2014/12/08/4441  in Japanese)
 
@@ -76,6 +79,9 @@ using (var stream = new FileStream("target.sgml", FileMode.Open, FileAccess.Read
 ```
 
 ## Versions
+* 2016.3.27.1:
+ * Refactor by target platforms.
+ * Add PCL3 (dnxcore50)
 * 2014.12.7.3:
  * Add 1 line parse method.
 * 2014.12.7.2:
