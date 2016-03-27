@@ -32,6 +32,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.SgmlReader.NET35"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.SgmlReader.NET4", "CenterCLR.SgmlReader.NET4\CenterCLR.SgmlReader.NET4.csproj", "{326104E4-9EC5-4A12-8A64-DAA74362469F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dnxcore50-sample", "dnxcore50-sample\dnxcore50-sample.csproj", "{86D68F97-625F-44BA-93AF-DAA75BAD7A91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +60,10 @@ Global
 		{326104E4-9EC5-4A12-8A64-DAA74362469F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{326104E4-9EC5-4A12-8A64-DAA74362469F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{326104E4-9EC5-4A12-8A64-DAA74362469F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86D68F97-625F-44BA-93AF-DAA75BAD7A91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86D68F97-625F-44BA-93AF-DAA75BAD7A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86D68F97-625F-44BA-93AF-DAA75BAD7A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86D68F97-625F-44BA-93AF-DAA75BAD7A91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,18 +1,20 @@
-{
-    "version": "1.0.0-*",
-    "compilationOptions": {
-        "emitEntryPoint": true
-    },
-
-    "dependencies": {
-        "NETStandard.Library": "1.0.0-rc2-23811",
-        "System.Net.Http": "4.0.1-beta-23516",
-        "System.Xml.ReaderWriter": "4.0.11-beta-23516",
-        "System.Xml.XDocument": "4.0.11-beta-23516",
-        "CenterCLR.SgmlReader": "2016.3.27.2"
-    },
-
-    "frameworks": {
-        "dnxcore50": { }
-    }
+﻿{
+	"version": "1.0.0-*",
+	"compilationOptions": {
+		"emitEntryPoint": true
+	},
+	"dependencies": {
+		"CenterCLR.SgmlReader": "2016.3.27.2",
+		"NETStandard.Library": "1.0.0-rc2-23811",
+		"System.Net.Http": "4.0.0",
+		"System.Xml.ReaderWriter": "4.0.10",
+		"System.Xml.XDocument": "4.0.10"
+	},
+	"frameworks": {
+		".NETFramework,Version=v4.6.1": { },
+		"dnxcore50": { }
+	},
+	"runtimes": {
+		"win": { }
+	}
 }
