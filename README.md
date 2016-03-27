@@ -38,7 +38,7 @@
 * Enjoy!
 
 ## Standard usage (HTML parse mode)
-```
+``` csharp
 // Open from stream
 using (var stream = new FileStream("target.html", FileMode.Open, FileAccess.Read, FileShare.Read))
 {
@@ -48,7 +48,7 @@ using (var stream = new FileStream("target.html", FileMode.Open, FileAccess.Read
 ```
 
 ## External reference capability usage (SGML handling, not tested :-)
-```
+``` csharp
 // Open stream
 using (var stream = new FileStream("target.sgml", FileMode.Open, FileAccess.Read, FileShare.Read))
 {
@@ -99,7 +99,7 @@ using (var stream = new FileStream("target.sgml", FileMode.Open, FileAccess.Read
  * Initial release.
 
 ## Derived original copyrights
-```
+``` csharp
 /*
  * 
  * An XmlReader implementation for loading SGML (including HTML) converting it
