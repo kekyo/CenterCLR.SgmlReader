@@ -1,4 +1,4 @@
-/*
+﻿/*
  * 
  * An XmlReader implementation for loading SGML (including HTML) converting it
  * to well formed XML, by adding missing quotes, empty attribute values, ignoring
@@ -51,21 +51,12 @@
  *
  */
 
-using System;
 using System.Reflection;
-using System.Runtime.CompilerServices;
 
 //
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 //
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft, MindTouch, Kouji Matsui")]
-[assembly: AssemblyProduct("SgmlReader for Portable")]
-[assembly: AssemblyCopyright("Copyright (c) 2002 Microsoft Corporation; Copyright (c) 2007-2013 MindTouch; Copyright (c) 2014 Kouji Matsui")]
-[assembly: AssemblyTrademark("SgmlReader for Portable")]
-[assembly: AssemblyCulture("")]
-
-[assembly: AssemblyVersion("2016.3.27.1")]
-[assembly: AssemblyFileVersion("2016.3.27.1")]
+[assembly: AssemblyTitle("SgmlReader for Portable (Store App)")]
+[assembly: AssemblyDescription("Converts SGML to XML via XmlReader API")]
