@@ -11,10 +11,6 @@
 		"System.Xml.XDocument": "4.0.10"
 	},
 	"frameworks": {
-		".NETFramework,Version=v4.6.1": { },
-		"dnxcore50": { }
+		"dnxcore50": { },
 	},
-	"runtimes": {
-		"win": { }
-	}
 }
