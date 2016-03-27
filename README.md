@@ -12,7 +12,8 @@
 * But, most popular usage the "HTML" parser. (It's scraper!!)
 
 * SgmlReader based Mindtouch SgmlReader 1.8.11 (https://github.com/mindtouch/sgmlreader)
-* Changed to Portable class library, target platforms:
+* Supported Portable class library, target platforms:
+ * .NET Framework 3.5-Client/4.0-Client
  * .NET Framework 4.0.3 or upper.
  * Silverlight 4 or upper.
  * Windows phone 7 or upper.
@@ -80,6 +81,8 @@ using (var stream = new FileStream("target.sgml", FileMode.Open, FileAccess.Read
 ```
 
 ## Versions
+* 2016.3.27.2:
+ * Add .NET 3.5-Client/4.0-Client assembly (with serializable exception type).
 * 2016.3.27.1:
  * Refactor by target platforms.
  * Add PCL3 (dnxcore50)

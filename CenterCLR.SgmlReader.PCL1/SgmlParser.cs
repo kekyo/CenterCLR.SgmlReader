@@ -49,11 +49,19 @@ using System.IO;
 using System.Text;
 using System.Xml;
 
+#if NET35 || NET4
+using System.Runtime.Serialization;
+using System.Security.Permissions;
+#endif
+
 namespace CenterCLR.Sgml
 {
 	/// <summary>
 	/// Thrown if any errors occur while parsing the source.
 	/// </summary>
+#if NET35 || NET4
+	[Serializable]
+#endif
 	public sealed class SgmlParseException : Exception
 	{
 		private string m_entityContext;
@@ -95,6 +103,32 @@ namespace CenterCLR.Sgml
 			: base(message, innerException)
 		{
 		}
+
+#if NET35 || NET4
+		/// <summary>
+		/// Deserialization constructor.
+		/// </summary>
+		/// <param name="info">SerializationInfo</param>
+		/// <param name="context">StreamingContext</param>
+		private SgmlParseException(SerializationInfo info, StreamingContext context)
+			: base(info, context)
+		{
+			m_entityContext = info.GetString("entityContext");
+		}
+
+		/// <summary>
+		/// Serialization method.
+		/// </summary>
+		/// <param name="info">SerializationInfo</param>
+		/// <param name="context">StreamingContext</param>
+		[SecurityPermission(SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.SerializationFormatter)]
+		public override void GetObjectData(SerializationInfo info, StreamingContext context)
+		{
+			base.GetObjectData(info, context);
+
+			info.AddValue("entityContext", m_entityContext);
+		}
+#endif
 
 		/// <summary>
 		/// Contextual information detailing the entity on which the error occurred.
@@ -960,7 +994,7 @@ namespace CenterCLR.Sgml
 			}
 		}
 
-		#region IDisposable Members
+#region IDisposable Members
 
 		/// <summary>
 		/// The finalizer for the Entity class.
@@ -995,7 +1029,7 @@ namespace CenterCLR.Sgml
 			}
 		}
 
-		#endregion
+#endregion
 	}
 
 	// This class decodes an HTML/XML stream correctly.

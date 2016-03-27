@@ -2481,12 +2481,11 @@ namespace CenterCLR.Sgml
 				return this.m_state == State.Eof;
 			}
 		}
-
+#if NET35 || NET4
 		/// <summary>
 		/// Changes the <see cref="ReadState"/> to Closed.
 		/// </summary>
-		[SuppressMessage("Microsoft.Usage", "CA2213")]
-		protected override void Dispose(bool disposing)
+		public override void Close()
 		{
 			if (this.m_current != null)
 			{
@@ -2499,10 +2498,29 @@ namespace CenterCLR.Sgml
 				this.m_log.Dispose();
 				this.m_log = null;
 			}
-
-			base.Dispose(disposing);
 		}
+#else
+		/// <summary>
+		/// Changes the <see cref="ReadState"/> to Closed.
+		/// </summary>
+		[SuppressMessage("Microsoft.Usage", "CA2213")]
+		protected override void Dispose(bool disposing)
+		{
+			base.Dispose(disposing);
 
+			if (this.m_current != null)
+			{
+				this.m_current.Close();
+				this.m_current = null;
+			}
+
+			if (this.m_log != null)
+			{
+				this.m_log.Dispose();
+				this.m_log = null;
+			}
+		}
+#endif
 		/// <summary>
 		/// Gets the state of the reader.
 		/// </summary>
@@ -2556,7 +2574,11 @@ namespace CenterCLR.Sgml
 			}
 
 			xw.Flush();
+#if NET35 || NET4
+			xw.Close();
+#else
 			xw.Dispose();
+#endif
 			return sw.ToString();
 		}
 
@@ -2577,7 +2599,11 @@ namespace CenterCLR.Sgml
 			});
 			xw.WriteNode(this, true);
 			xw.Flush();
+#if NET35 || NET4
+			xw.Close();
+#else
 			xw.Dispose();
+#endif
 			return sw.ToString();
 		}
 

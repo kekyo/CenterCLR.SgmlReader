@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4AF3A4D1-74B7-4F8C-9CCD-7C82C78116D4}"
 	ProjectSection(SolutionItems) = preProject
+		build-nupkg.bat = build-nupkg.bat
 		CenterCLR.SgmlReader.128.png = CenterCLR.SgmlReader.128.png
 		CenterCLR.SgmlReader.32.png = CenterCLR.SgmlReader.32.png
 		CenterCLR.SgmlReader.design = CenterCLR.SgmlReader.design
+		CenterCLR.SgmlReader.nuspec = CenterCLR.SgmlReader.nuspec
 		CenterCLR.SgmlReader.snk = CenterCLR.SgmlReader.snk
 		CommonAssemblyInfo.cs = CommonAssemblyInfo.cs
 		README.md = README.md

@@ -58,5 +58,5 @@ using System.Reflection;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 //
-[assembly: AssemblyTitle("SgmlReader for Portable (Store App)")]
+[assembly: AssemblyTitle("SgmlReader for Portable (Profile259)")]
 [assembly: AssemblyDescription("Converts SGML to XML via XmlReader API")]

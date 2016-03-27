@@ -54,6 +54,7 @@
 using System;
 using System.Reflection;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 
 //
 // General Information about an assembly is controlled through the following 
@@ -67,5 +68,5 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyTrademark("SgmlReader for Portable")]
 [assembly: AssemblyCulture("")]
 
-[assembly: AssemblyVersion("2016.3.27.1")]
-[assembly: AssemblyFileVersion("2016.3.27.1")]
+[assembly: AssemblyVersion("2016.3.27.2")]
+[assembly: AssemblyFileVersion("2016.3.27.2")]
