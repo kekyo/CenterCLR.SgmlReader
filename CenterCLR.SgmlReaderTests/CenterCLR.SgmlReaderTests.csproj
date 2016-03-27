@@ -127,9 +127,9 @@
     <EmbeddedResource Include="Resources\original.test" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CenterCLR.SgmlReader.PCL1\CenterCLR.SgmlReader.PCL1.csproj">
-      <Project>{9e2c16e2-ec92-4437-b123-3375568f4df6}</Project>
-      <Name>CenterCLR.SgmlReader.PCL1</Name>
+    <ProjectReference Include="..\CenterCLR.SgmlReader.PCL3\CenterCLR.SgmlReader.PCL3.csproj">
+      <Project>{e2e00222-694a-43fe-bf0a-acd65af12ef3}</Project>
+      <Name>CenterCLR.SgmlReader.PCL3</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
