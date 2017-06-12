@@ -6,6 +6,8 @@
 * NuGet Package: [![NuGet SgmlReader](https://img.shields.io/nuget/v/CenterCLR.SgmlReader.svg?style=flat)](https://www.nuget.org/packages/CenterCLR.SgmlReader)
 * Continuous integration: [![AppVeyor SgmlReader](https://img.shields.io/appveyor/ci/kekyo/centerclr-sgmlreader.svg?style=flat)](https://ci.appveyor.com/project/kekyo/centerclr-sgmlreader)
 
+* Currently CI tests are broken. (These tests passed by running manually)
+
 ## What is this?
 
 * SgmlReader is "SGML" markup language parser, and derived from System.Xml.XmlReader in .NET CLR.

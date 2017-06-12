@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4AF3A4D1-74B7-4F8C-9CCD-7C82C78116D4}"
 	ProjectSection(SolutionItems) = preProject
@@ -32,7 +32,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.SgmlReader.NET35"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterCLR.SgmlReader.NET4", "CenterCLR.SgmlReader.NET4\CenterCLR.SgmlReader.NET4.csproj", "{326104E4-9EC5-4A12-8A64-DAA74362469F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dnxcore50-sample", "dnxcore50-sample\dnxcore50-sample.csproj", "{86D68F97-625F-44BA-93AF-DAA75BAD7A91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "netcore10-sample", "netcore10-sample\netcore10-sample.csproj", "{B69BEA4E-EA33-4373-B9C1-7AD66D94505B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,8 +60,10 @@ Global
 		{326104E4-9EC5-4A12-8A64-DAA74362469F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{326104E4-9EC5-4A12-8A64-DAA74362469F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{326104E4-9EC5-4A12-8A64-DAA74362469F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{86D68F97-625F-44BA-93AF-DAA75BAD7A91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{86D68F97-625F-44BA-93AF-DAA75BAD7A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B69BEA4E-EA33-4373-B9C1-7AD66D94505B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B69BEA4E-EA33-4373-B9C1-7AD66D94505B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B69BEA4E-EA33-4373-B9C1-7AD66D94505B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B69BEA4E-EA33-4373-B9C1-7AD66D94505B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
