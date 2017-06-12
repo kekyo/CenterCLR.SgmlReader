@@ -11,16 +11,31 @@
 * SgmlReader is "SGML" markup language parser, and derived from System.Xml.XmlReader in .NET CLR.
 * But, most popular usage the "HTML" parser. (It's scraper!!)
 
+## Easy usage for HTML parse and get truly XDocument.
+``` csharp
+// Open from stream
+using (var stream = new FileStream("target.html", FileMode.Open, FileAccess.Read, FileShare.Read))
+{
+    // Parse Html mode (Easy usage)
+    XDocument document = SgmlReader.Parse(stream);
+
+    // Manipulate XDocument anything...
+}
+```
+
+## Details
+
 * SgmlReader based Mindtouch SgmlReader 1.8.11 (https://github.com/mindtouch/sgmlreader)
 * Supported Portable class library, target platforms:
- * .NET Framework 3.5-Client/4.0-Client
- * .NET Framework 4.0.3 or upper.
- * Silverlight 4 or upper.
- * Windows phone 7 or upper.
- * Windows store apps (Windows 8 or upper).
- * DNX (dnxcore50)
- * Xbox 360.
+  * .NET Framework 3.5-Client/4.0-Client
+  * .NET Framework 4.0.3 or upper.
+  * .NET Standard 1.0 or upper.
+  * Silverlight 4 or upper.
+  * Windows phone 7 or upper.
+  * Windows store apps (Windows 8 or upper).
+  * Xbox 360.
 
+* .NET Standard: 1.0
 * PCL Profiles: 131, 336, 259
 
 * More easy usage: HTML4 DTD included. - HTML scraping ready!
@@ -31,72 +46,64 @@
 * GitHub: https://github.com/kekyo/CenterCLR.SgmlReader.git
 
 * Build requirements:
- * Visual Studio 2012/2015
+  * Visual Studio 2012/2015
 
 * Advent calendar-driven project :-)  (http://www.kekyo.net/2014/12/08/4441  in Japanese)
 
 * Enjoy!
-
-## Standard usage (HTML parse mode)
-``` csharp
-// Open from stream
-using (var stream = new FileStream("target.html", FileMode.Open, FileAccess.Read, FileShare.Read))
-{
-	// Parse Html mode (Easy usage)
-	XDocument document = SgmlReader.Parse(stream);
-}
-```
 
 ## External reference capability usage (SGML handling, not tested :-)
 ``` csharp
 // Open stream
 using (var stream = new FileStream("target.sgml", FileMode.Open, FileAccess.Read, FileShare.Read))
 {
-	var tr = new StreamReader(stream, Encoding.UTF8);
+    var tr = new StreamReader(stream, Encoding.UTF8);
 
-	// Define base uri
-	var baseUri = new Uri("http://www.example.com/");
+    // Define base uri
+    var baseUri = new Uri("http://www.example.com/");
 
-	// Setup SgmlReader
-	var sgmlReader = new SgmlReader(stream, baseUri,
+    // Setup SgmlReader
+    var sgmlReader = new SgmlReader(stream, baseUri,
 
-		// Stream opener delegate (Separate physical resource access)
-		uri => new StreamInformation
-			{
-				Stream = WebRequest.Create(uri).GetResponse().GetResponseStream(),
-				DefaultEncoding = Encoding.UTF8
-			})
+        // Stream opener delegate (Separate physical resource access)
+        uri => new StreamInformation
+            {
+                Stream = WebRequest.Create(uri).GetResponse().GetResponseStream(),
+                DefaultEncoding = Encoding.UTF8
+            })
 
-		{
-			WhitespaceHandling = true,
-			CaseFolding = CaseFolding.ToLower
-		};
+        {
+            WhitespaceHandling = true,
+            CaseFolding = CaseFolding.ToLower
+        };
 
-	// create document
-	var document = new XmlDocument();
-	document.PreserveWhitespace = true;
-	document.XmlResolver = null;
-	document.Load(sgmlReader);
+    // create document
+    var document = new XmlDocument();
+    document.PreserveWhitespace = true;
+    document.XmlResolver = null;
+    document.Load(sgmlReader);
 }
 ```
 
 ## Versions
+* 2017.6.12:
+  * Support .NET Standard 1.0.
 * 2016.3.27.2:
- * Add .NET 3.5-Client/4.0-Client assembly (with serializable exception type).
+  * Add .NET 3.5-Client/4.0-Client assembly (with serializable exception type).
 * 2016.3.27.1:
- * Refactor by target platforms.
- * Add PCL3 (dnxcore50)
+  * Refactor by target platforms.
+  * Add PCL3 (dnxcore50)
 * 2014.12.7.3:
- * Add 1 line parse method.
+  * Add 1 line parse method.
 * 2014.12.7.2:
- * Direct handling the Stream class.
- * Initial parameter is set of Html parse mode.
+  * Direct handling the Stream class.
+  * Initial parameter is set of Html parse mode.
 * 2014.12.7.1:
- * Namespace changed "CenterCLR.Sgml".
- * More easy usage, HTML parse is default mode.
- * Native store app library included.
+  * Namespace changed "CenterCLR.Sgml".
+  * More easy usage, HTML parse is default mode.
+  * Native store app library included.
 * 1.8.11.2014:
- * Initial release.
+  * Initial release.
 
 ## Derived original copyrights
 ``` csharp

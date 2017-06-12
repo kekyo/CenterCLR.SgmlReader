@@ -4,13 +4,13 @@
 		"emitEntryPoint": true
 	},
 	"dependencies": {
-		"CenterCLR.SgmlReader": "2016.3.27.2",
-		"NETStandard.Library": "1.0.0-rc2-23811",
-		"System.Net.Http": "4.0.0",
-		"System.Xml.ReaderWriter": "4.0.10",
-		"System.Xml.XDocument": "4.0.10"
+		"CenterCLR.SgmlReader": "2017.6.12",
+		"NETStandard.Library": "1.6.1",
+		"System.Net.Http": "4.3.1",
+		"System.Xml.ReaderWriter": "4.3.0",
+		"System.Xml.XDocument": "4.3.0"
 	},
 	"frameworks": {
-		"dnxcore50": { },
+		"netcore10": { },
 	},
 }

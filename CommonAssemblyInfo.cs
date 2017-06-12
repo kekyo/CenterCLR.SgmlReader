@@ -64,9 +64,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft, MindTouch, Kouji Matsui")]
 [assembly: AssemblyProduct("SgmlReader for Portable")]
-[assembly: AssemblyCopyright("Copyright (c) 2002 Microsoft Corporation; Copyright (c) 2007-2013 MindTouch; Copyright (c) 2014 Kouji Matsui")]
+[assembly: AssemblyCopyright("Copyright (c) 2002 Microsoft Corporation; Copyright (c) 2007-2013 MindTouch; Copyright (c) 2017 Kouji Matsui")]
 [assembly: AssemblyTrademark("SgmlReader for Portable")]
 [assembly: AssemblyCulture("")]
 
-[assembly: AssemblyVersion("2016.3.27.2")]
-[assembly: AssemblyFileVersion("2016.3.27.2")]
+[assembly: AssemblyVersion("2017.6.12")]
+[assembly: AssemblyFileVersion("2017.6.12")]

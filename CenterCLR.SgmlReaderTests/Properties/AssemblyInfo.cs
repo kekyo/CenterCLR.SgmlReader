@@ -53,7 +53,7 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft, MindTouch, Kouji Matsui")]
 [assembly: AssemblyProduct("SgmlReader for Portable")]
-[assembly: AssemblyCopyright("Copyright (c) 2002, Microsoft Corporation; Copyright (c) 2007-2013, MindTouch; Copyright (c) 2014, Kouji Matsui")]
+[assembly: AssemblyCopyright("Copyright (c) 2002, Microsoft Corporation; Copyright (c) 2007-2013, MindTouch; Copyright (c) 2017, Kouji Matsui")]
 [assembly: AssemblyTrademark("SgmlReader for Portable")]
 [assembly: AssemblyCulture("")]
 [assembly: CLSCompliant(true)]
