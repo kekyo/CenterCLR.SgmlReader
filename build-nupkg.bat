@@ -15,4 +15,4 @@ rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 rem See the License for the specific language governing permissions and
 rem limitations under the License.
 
-dotnet pack --configuration Release -p:AssemblyVersion=2018.8.30 -p:PackageVersion=2018.8.30 --output .. CenterCLR.SgmlReader
+dotnet pack --configuration Release -p:AssemblyVersion=2018.8.31 -p:PackageVersion=2018.8.31 --output .. CenterCLR.SgmlReader

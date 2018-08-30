@@ -37,7 +37,9 @@ Done!</Description>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Html.dtd" />
+    <EmbeddedResource Include="Html.dtd">
+      <LogicalName>CenterCLR.Sgml.Html.dtd</LogicalName>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

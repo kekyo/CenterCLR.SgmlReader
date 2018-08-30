@@ -82,6 +82,8 @@ using (var stream = new FileStream("target.sgml", FileMode.Open, FileAccess.Read
 ```
 
 ## Versions
+* 2018.8.31:
+  * Fixed can't load Html.dtd embedded resource.
 * 2018.8.30:
   * Support for .NET Framework 4.0, .NET Standard 1.0/2.0 and .NET Core 2.0.
   * Obsoleted all PCLs and net40-Client. If you use these platforms, try to fixed nuget package version at older.
