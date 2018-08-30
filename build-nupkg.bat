@@ -1,7 +1,7 @@
 @echo off
 
 rem CenterCLR.SgmlReader
-rem Copyright (c) 2016 Kouji Matsui (@kekyo2)
+rem Copyright (c) 2014-2018 Kouji Matsui (@kozy_kekyo)
 rem 
 rem Licensed under the Apache License, Version 2.0 (the "License");
 rem you may not use this file except in compliance with the License.
@@ -15,4 +15,4 @@ rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 rem See the License for the specific language governing permissions and
 rem limitations under the License.
 
-.nuget\nuget pack CenterCLR.SgmlReader.nuspec -Prop Version=2017.6.12 -Prop Configuration=Release
+dotnet pack --configuration Release -p:AssemblyVersion=2018.8.30 -p:PackageVersion=2018.8.30 --output .. CenterCLR.SgmlReader

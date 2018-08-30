@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4AF3A4D1-74B7-4F8C-9CCD-7C82C78116D4}"
+	ProjectSection(SolutionItems) = preProject
+		build-nupkg.bat = build-nupkg.bat
+		CenterCLR.SgmlReader.128.png = CenterCLR.SgmlReader.128.png
+		CenterCLR.SgmlReader.32.png = CenterCLR.SgmlReader.32.png
+		CenterCLR.SgmlReader.design = CenterCLR.SgmlReader.design
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CenterCLR.SgmlReader", "CenterCLR.SgmlReader\CenterCLR.SgmlReader.csproj", "{29C5BE61-6EBF-42F3-A9E2-03F8A8C4CDDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29C5BE61-6EBF-42F3-A9E2-03F8A8C4CDDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29C5BE61-6EBF-42F3-A9E2-03F8A8C4CDDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29C5BE61-6EBF-42F3-A9E2-03F8A8C4CDDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29C5BE61-6EBF-42F3-A9E2-03F8A8C4CDDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0362AFFB-ADE0-42FC-A2C3-898C546A5A3E}
+	EndGlobalSection
+EndGlobal

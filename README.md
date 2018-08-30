@@ -4,6 +4,7 @@
 
 ## Status
 * NuGet Package: [![NuGet SgmlReader](https://img.shields.io/nuget/v/CenterCLR.SgmlReader.svg?style=flat)](https://www.nuget.org/packages/CenterCLR.SgmlReader)
+* NuGet Package (Older PCLs): [![NuGet SgmlReader (Older PCLs)](https://img.shields.io/badge/nuget-v2017.6.12-blue.svg?style=flat)](https://www.nuget.org/packages/CenterCLR.SgmlReader/2017.6.12)
 * Continuous integration: [![AppVeyor SgmlReader](https://img.shields.io/appveyor/ci/kekyo/centerclr-sgmlreader.svg?style=flat)](https://ci.appveyor.com/project/kekyo/centerclr-sgmlreader)
 
 * Currently CI tests are broken. (These tests passed by running manually)
@@ -29,16 +30,9 @@ using (var stream = new FileStream("target.html", FileMode.Open, FileAccess.Read
 
 * SgmlReader based Mindtouch SgmlReader 1.8.11 (https://github.com/mindtouch/sgmlreader)
 * Supported Portable class library, target platforms:
-  * .NET Framework 3.5-Client/4.0-Client
-  * .NET Framework 4.0.3 or upper.
+  * .NET Framework 4.0 (not net40-Client) or upper.
   * .NET Standard 1.0 or upper.
-  * Silverlight 4 or upper.
-  * Windows phone 7 or upper.
-  * Windows store apps (Windows 8 or upper).
-  * Xbox 360.
-
-* .NET Standard: 1.0
-* PCL Profiles: 131, 336, 259
+  * .NET Core 2.0 or upper.
 
 * More easy usage: HTML4 DTD included. - HTML scraping ready!
 * Unit test included.
@@ -48,7 +42,7 @@ using (var stream = new FileStream("target.html", FileMode.Open, FileAccess.Read
 * GitHub: https://github.com/kekyo/CenterCLR.SgmlReader.git
 
 * Build requirements:
-  * Visual Studio 2012/2015
+  * Visual Studio 2017
 
 * Advent calendar-driven project :-)  (http://www.kekyo.net/2014/12/08/4441  in Japanese)
 
@@ -88,6 +82,11 @@ using (var stream = new FileStream("target.sgml", FileMode.Open, FileAccess.Read
 ```
 
 ## Versions
+* 2018.8.30:
+  * Support for .NET Framework 4.0, .NET Standard 1.0/2.0 and .NET Core 2.0.
+  * Obsoleted all PCLs and net40-Client. If you use these platforms, try to fixed nuget package version at older.
+  * Obsoleted key-signed.
+  * Switched to new MSBuild format.
 * 2017.6.12:
   * Support .NET Standard 1.0.
 * 2016.3.27.2:

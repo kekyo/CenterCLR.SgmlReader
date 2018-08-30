@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.0;netstandard2.0;netcoreapp2.0;net40</TargetFrameworks>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)'=='net40'">
+    <DefineConstants>NET4</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)'!='net40'">
+    <DefineConstants>NETFX_CORE</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Title>CenterCLR.SgmlReader</Title>
+    <Description>SgmlReader for Portable Library.
+SgmlReader is "SGML" markup language parser, and derived from System.Xml.XmlReader in .NET CLR.
+But, most popular usage the "HTML" parser. (It's scraper!!)
+
+/* Use SgmlReader in Html parse mode. */
+XDocument document = SgmlReader.Parse(stream);
+
+Done!</Description>
+    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/kekyo/CenterCLR.SgmlReader/master/CenterCLR.SgmlReader.100.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/kekyo/CenterCLR.SgmlReader</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/kekyo/CenterCLR.SgmlReader</RepositoryUrl>
+    <Authors>Kouji Matsui</Authors>
+    <Copyright>Copyright (c) 2002 Microsoft Corporation; Copyright (c) 2007-2013 MindTouch; Copyright (c) 2014-2018 Kouji Matsui (@kozy_kekyo)</Copyright>
+    <PackageTags>SgmlReader;Parser;Portable;HtmlReader;Html;Scraping</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Html.dtd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Html.dtd" />
+  </ItemGroup>
+
+</Project>

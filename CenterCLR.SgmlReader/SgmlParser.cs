@@ -22,7 +22,7 @@
 
 /*
  * SgmlReader for Portable 
- * Copyright (c) 2014 Kouji Matsui, All rights reserved.
+ * Copyright (c) 2014-2018 Kouji Matsui, All rights reserved.
  * https://github.com/kekyo/CenterCLR.SgmlReader.git
  * Old project site : http://sgmlreaderportable.codeplex.com
  * 

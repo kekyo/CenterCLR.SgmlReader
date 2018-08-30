@@ -126,12 +126,6 @@
     <EmbeddedResource Include="Resources\61.test" />
     <EmbeddedResource Include="Resources\original.test" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CenterCLR.SgmlReader.NET4\CenterCLR.SgmlReader.NET4.csproj">
-      <Project>{326104e4-9ec5-4a12-8a64-daa74362469f}</Project>
-      <Name>CenterCLR.SgmlReader.NET4</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
